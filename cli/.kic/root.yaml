@@ -1,0 +1,16 @@
+###
+# root description and commands
+###
+
+name: kic
+short: Kubernetes in Codespaces CLI
+long: "Kubernetes in Codespaces CLI\n\n  A dynamic CLI for automating many Kubernetes development tasks"
+
+commands:
+  - name: build
+    short: Build local apps
+
+    scriptCommands:
+    - name: imdb
+      short: Build ArgoCD
+      path: build/argocd
