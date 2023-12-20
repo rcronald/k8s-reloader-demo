@@ -34,6 +34,9 @@ docker network connect k3d k3d-registry.localhost
 echo "creating k3d cluster"
 kic cluster rebuild
 
+echo "bilding ArgoCD"
+kic build argocd
+
 echo "deploying k3d cluster"
 kic cluster deploy
 
