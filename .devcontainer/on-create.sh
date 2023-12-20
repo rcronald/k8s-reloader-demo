@@ -35,7 +35,7 @@ echo "creating k3d cluster"
 kic cluster rebuild
 
 echo "building ArgoCD"
-kic build argocd
+#kic build argocd
 
 echo "deploying k3d cluster"
 kic cluster deploy

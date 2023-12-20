@@ -4,9 +4,9 @@
 #short: Build and deploy ArgoCD services
 
 
-kubectl create namespace argocd
+#kubectl create namespace argocd
 
-#kubectl apply -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml -n argocd
-kubectl apply -n argocd -f https://raw.githubusercontent.com/codefresh-contrib/gitops-certification-examples/main/argocd-noauth/install.yaml
+##kubectl apply -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml -n argocd
+#kubectl apply -n argocd -f https://raw.githubusercontent.com/codefresh-contrib/gitops-certification-examples/main/argocd-noauth/install.yaml
 
-kubectl get pods -n argocd
+#kubectl get pods -n argocd
