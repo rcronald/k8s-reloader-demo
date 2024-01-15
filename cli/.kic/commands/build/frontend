@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#name: ArgoCD
-#short: Build and deploy ArgoCD services
+#name: frontend
+#short: Build and deploy Frontend Application
 
 
 #kubectl create namespace argocd

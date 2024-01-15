@@ -3,8 +3,6 @@
 echo "on-create start"
 echo "$(date +'%Y-%m-%d %H:%M:%S')    on-create start" >> "$HOME/status"
 
-
-
 # clone repos
 
 export REPO_BASE=$PWD
@@ -35,7 +33,7 @@ echo "creating k3d cluster"
 kic cluster rebuild
 
 echo "building ArgoCD"
-#kic build argocd
+#kic build frontend
 
 echo "deploying k3d cluster"
 kic cluster deploy

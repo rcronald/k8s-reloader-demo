@@ -11,6 +11,6 @@ commands:
     short: Build local apps
 
     scriptCommands:
-    - name: argocd
-      short: Build ArgoCD
-      path: build/argocd
+    - name: frontend
+      short: Build Frontend App
+      path: build/frontend
