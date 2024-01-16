@@ -38,6 +38,11 @@ echo "building ArgoCD"
 echo "deploying k3d cluster"
 kic cluster deploy
 
+echo "installing traefik"
+helm repo add traefik https://containous.github.io/traefik-helm-chart
+helm install traefik traefik/traefik
+k get service traefik
+
 
 # Only run apt upgrade on pre-build
 if [ "$CODESPACE_NAME" = "null" ]
