@@ -6,10 +6,10 @@ kubeAPI:
   hostIP: "0.0.0.0"
   hostPort: "6443"
 ports:
-  - port: 30001:80
+  - port: 8080:80
     nodeFilters:
       - server[0]
-  - port: 30002:80
+  - port: 8081:80
     nodeFilters:
       - loadbalancer
 options:

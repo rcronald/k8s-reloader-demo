@@ -4,7 +4,6 @@ metadata:
   labels:
     app: argocd-server
   name: argocd-server-nodeport
-  namespace: argocd
 spec:
   type: NodePort
   selector:
