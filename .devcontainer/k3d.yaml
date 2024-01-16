@@ -9,7 +9,7 @@ ports:
   - port: 30080:80
     nodeFilters:
       - server[0]
-  - port: 38080:30443
+  - port: 38080:8080
     nodeFilters:
       - server[0]
   - port: 8081:80
