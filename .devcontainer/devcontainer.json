@@ -22,15 +22,13 @@
 
 	// forward ports for the app
 	"forwardPorts": [
-		30080,
-		38080,
+		3080,
 		8081
 	],
 
 	// add labels
 	"portsAttributes": {
-		"30080": { "label": "Frontend" },
-		"38080": { "label": "ArgoCD" },
+		"3080": { "label": "Frontend" },
 		"8081": { "label": "Ingress" }
 	},
 
