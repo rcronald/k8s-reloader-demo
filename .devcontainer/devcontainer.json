@@ -17,17 +17,19 @@
 	},
 
 	"hostRequirements": {
-		"cpus": 8
+		"cpus": 16
 	},
 
 	// forward ports for the app
 	"forwardPorts": [
-		30443
+		3080,
+		8081
 	],
 
 	// add labels
 	"portsAttributes": {
-		"30443": { "label": "ArgoCD" }
+		"3080": { "label": "Frontend" },
+		"8081": { "label": "Ingress" }
 	},
 
 	// Install extensions
