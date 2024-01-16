@@ -6,7 +6,7 @@ kubeAPI:
   hostIP: "0.0.0.0"
   hostPort: "6443"
 ports:
-  - port: 30001:30001
+  - port: 30001:80
     nodeFilters:
       - server[0]
   - port: 30002:80

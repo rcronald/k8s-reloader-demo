@@ -28,7 +28,7 @@
 
 	// add labels
 	"portsAttributes": {
-		"30001": { "label": "ArgoCD" },
+		"30001": { "label": "Frontend" },
 		"30002": { "label": "Ingress" }
 	},
 
