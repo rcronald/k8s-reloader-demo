@@ -4,11 +4,11 @@ Este repositorio contiene todos los recursos expuestos en el Meetup Nro. 3 de Cl
 
 ## Pre-Requisitos
 Para la siguiente demo se requiere utilizar:
-- Multipass / microk8s --> Instalación de Multipass
-- Rancher Desktop / k3s --> Instalación de Rancher Desktop
-- Ingress Controller --> Instalación de Ingress Controller
-- ArgoCD --> Instalación de ArgoCD
-- Reloader --> Instalación de Reloader
+- Multipass / microk8s --> [Instalación de Multipass](docs/multipass-install.md)
+- Rancher Desktop / k3s --> [Instalación de Rancher Desktop](docs/rancher-desktop-install.md)
+- Ingress Controller --> [Instalación de Ingress Controller](docs/ingress-install.md)
+- ArgoCD --> [Instalación de ArgoCD](docs/argocd-install.md)
+- Reloader --> [Instalación de Reloader](#Paso 4: Instalar Reloader Controller)
 
 ## Paso 1: Instalar aplicaciones
 
@@ -61,14 +61,14 @@ data:
 
 ```
 
-## Paso 4: Actualizar Configmap en cluster
+## Paso 3: Actualizar Configmap en cluster
 
 ```
 kubectl apply -f deploy/apps/frontend/frontend-configmap.yaml
 kubectl apply -f deploy/apps/frontend/frontend-nginx-configmap.yaml
 ```
 
-## Paso 3: Instalar Reloader Controller
+## Paso 4: Instalar Reloader Controller
 
 ```
 helm repo add stakater https://stakater.github.io/stakater-charts 
@@ -76,14 +76,14 @@ helm repo update
 helm install stakater/reloader --generate-name
 ```
 
-## Paso 4: Limpiar aplicaciones
+## Paso 5: Limpiar aplicaciones
 
 ```
 kubectl delete -f deploy/apps/backend --ignore-not-found=true --wait=false
 kubectl delete -f deploy/apps/frontend --ignore-not-found=true --wait=false
 ```
 
-## Paso 5: Instrumentar Reloader
+## Paso 6: Instrumentar Reloader
 
 Para reiniciar el pod cuando existen cambios en cualquier de sus secretos o configmap referenciados en el manifiesto de despliegue.
 
