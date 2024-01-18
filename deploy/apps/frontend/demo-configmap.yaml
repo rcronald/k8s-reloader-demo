@@ -5,3 +5,4 @@ data:
 kind: ConfigMap
 metadata:
   name: demo-configmap
+  namespace: apps
